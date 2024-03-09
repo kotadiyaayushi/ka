@@ -1,0 +1,2176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab", serif;
+    box-sizing: border-box;
+
+
+}
+
+body {
+
+    background-color: rgb(0, 0, 0);
+}
+
+header {
+
+
+    height: 750px;
+    width: 100%;
+
+    background-image: url('images/hero-slider-1.jpg');
+    background-size: 100% 100%;
+    animation: slider 7s infinite linear;
+
+
+}
+
+@keyframes slider {
+
+    0% {
+        background-image: url('images/hero-slider-1.jpg');
+    }
+
+    33% {
+        background-image: url('images/hero-slider-2.jpg');
+    }
+
+    66% {
+        background-image: url('images/hero-slider-3.jpg');
+    }
+
+}
+
+.nav {
+
+    color: rgb(244, 229, 208);
+    font-weight: 400;
+
+    display: flex;
+
+    border-bottom: 0.5px solid rgb(62, 62, 62);
+
+
+}
+
+.left {
+
+    display: flex;
+    width: 50%;
+
+
+
+}
+
+.right {
+
+    display: flex;
+    width: 50%;
+    flex-direction: row-reverse;
+
+
+
+}
+
+.com {
+
+    margin: 15px;
+    margin-left: 15px;
+    font-size: 13px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+
+
+}
+
+.com:hover {
+
+    color: rgb(255, 255, 255);
+    transform: translate(3px, 3px);
+}
+
+#i {
+
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    margin: 5px;
+}
+
+#i:hover {
+
+    transform: rotateY(360deg);
+}
+
+.title {
+
+    display: flex;
+
+}
+
+.l {
+
+    display: flex;
+    width: 15%;
+    margin: 20px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+
+}
+
+.l:hover {
+
+    transform: rotateX(360deg);
+}
+
+
+.menubar {
+
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin-top: 35px;
+    color: aliceblue;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.m {
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    margin: 15px;
+    border-radius: 10px;
+
+
+}
+
+.m:hover {
+
+    transform: translate(5px, 5PX);
+    color: rgb(255, 206, 72);
+    box-shadow: 0 0 15px rgb(255, 253, 156);
+
+
+}
+
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 12px;
+    color: antiquewhite;
+
+}
+
+.btn {
+    font-family: "Concert One", sans-serif;
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(190, 164, 92);
+    margin: 20px;
+    box-shadow: 0 0 10px rgb(255, 253, 156);
+    width: 10%;
+    height: 50px;
+    color: black;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.btn:hover {
+
+    transform: translate(50px, 50px);
+    box-shadow: 0 0 20px rgb(255, 253, 156);
+    transform: scale(1.1);
+
+
+}
+
+.b {
+
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 11px;
+}
+
+.text {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: rgb(238, 215, 98);
+    font-size: 12px;
+    font-family: "Concert One", sans-serif;
+
+}
+
+.separator {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.s {
+    width: 100px;
+    margin: 20px;
+}
+
+.display {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+
+    display: flex;
+    color: white;
+    font-size: 70px;
+
+}
+
+.two {
+    color: white;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.corner {
+
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 25px;
+
+
+
+}
+
+
+.line {
+
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgb(247, 220, 130);
+    animation: rotat 10s infinite;
+    z-index: 0;
+
+}
+
+.box {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(247, 220, 130);
+    z-index: 1;
+}
+
+.img {
+    align-items: center;
+    font-size: 10px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 10px;
+    margin-right: 25px;
+
+}
+
+.t {
+    text-align: center;
+
+}
+
+
+@keyframes rotat {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+
+
+
+
+/* media */
+
+@media (max-width:900px) {
+
+
+    .left {
+
+        display: none;
+    }
+
+    .right {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .l {
+
+        display: flex;
+        height: 10px;
+        width: 10px;
+        margin: 10px;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in;
+
+    }
+
+    .menubar {
+
+        display: none;
+    }
+
+    .btn {
+
+        display: none;
+    }
+
+    .one {
+
+        display: flex;
+        color: white;
+        font-size: 40px;
+
+    }
+
+    .two {
+        color: white;
+        font-size: 11px;
+        margin: 20px;
+    }
+
+    .corner {
+
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 25px;
+        margin-top: 200px;
+
+
+
+
+    }
+
+    .line,
+    .box {
+
+        height: 70px;
+        width: 70px;
+    }
+
+    .img {
+
+        align-items: center;
+        font-size: 7px;
+        position: absolute;
+        z-index: 2;
+        margin-top: 5px;
+        margin-right: 11px;
+
+    }
+
+    .t {
+        display: none;
+    }
+
+    .text {
+
+        margin: 90px;
+    }
+
+
+
+
+
+}
+
+@media (max-width:600px) {
+
+    .right {
+
+        display: none;
+    }
+
+    .text {
+
+        margin-top: 80px;
+        font-size: 11px;
+    }
+
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+.logo-slide {
+
+    overflow: hidden;
+    display: flex;
+
+
+
+
+
+}
+
+.imgs {
+    margin: 100px;
+    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 0 20px rgb(247, 220, 130);
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.imgs:hover {
+
+    box-shadow: 0 0 30px rgb(247, 220, 130);
+    transform: translate(5px, 5px);
+    border-radius: 30px;
+
+}
+
+@media (max-width:900px) {
+
+    .logo-slide {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imgs {
+        margin-right: 90px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        height: 130px;
+        width: 130px;
+        box-shadow: 0 0 5px rgb(247, 220, 130);
+        border-radius: 5px;
+    }
+
+}
+
+
+
+/* 
+------------two---------------------------------------------------------- */
+.onee {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1 {
+
+
+    margin-top: 10px;
+    color: rgb(232, 213, 116);
+    font-size: 16px;
+    font-family: "Concert One", sans-serif;
+
+}
+
+.text2 {
+    margin-top: 10px;
+    color: aliceblue;
+    font-size: 50px;
+
+    text-shadow: 1px 1px 5px rgb(232, 213, 116);
+    border-radius: 10px;
+}
+
+.i1 {
+    margin: 20px;
+    width: 130px;
+}
+
+.offer {
+
+    /* margin-top: -80px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o {
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 300px;
+
+
+}
+
+.o img {
+
+    width: 300px;
+    margin-top: 0px;
+    height: 450px;
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in;
+
+
+}
+
+
+.shape2 {
+    z-index: 0;
+
+}
+
+.offer .o .badge {
+    height: 60px;
+    width: 80px;
+    /* box-shadow: 0 0 10px rgb(232, 213, 116); */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+
+.offer .o .badge:hover {
+
+    transform: rotateY(360deg);
+    box-shadow: none;
+
+}
+
+.o img:hover {
+
+    transform: rotateY(360deg);
+    box-shadow: 0 0 20px rgb(232, 213, 116);
+
+
+}
+
+.lorem {
+
+    
+    margin-bottom: 100px;
+
+    margin-top: 10px;
+    color: rgb(243, 235, 197);
+    font-size: 16px;
+    font-family: "Concert One", sans-serif;
+
+}
+
+#o2 {
+
+    width: 500px;
+
+}
+
+.oloream {
+
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 550;
+
+}
+
+.olrm {
+
+
+    margin-top: 10px;
+    color: rgb(232, 213, 116);
+    font-size: 12px;
+    font-family: "Concert One", sans-serif;
+
+}
+
+.shp {
+
+    z-index: -2;
+    margin-top: 10px;
+    text-align: center;
+    height: 10px;
+    width: 10px;
+    animation: vib 2s infinite;
+}
+
+@keyframes vib {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
+
+@media (max-width:900px) {
+
+    .onee {
+
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .shp {
+        display: none;
+    }
+
+    .text1 {
+        /* 
+        margin-left: 35%; */
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .i1 {
+        /* margin-left: 35%; */
+        width: 130px;
+    }
+
+    .offer {
+
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .o {
+        
+        text-align: center;
+        margin: 1px;
+        padding: 10px;
+        width: 300px;
+
+    }
+
+
+    .o img {
+
+        width: 200px;
+        margin-top: 0px;
+        height: 350px;
+        transition-property: all;
+        transition-duration: 0.8s;
+        transition-timing-function: ease-in;
+
+
+    }
+
+
+    .shape2 {
+        z-index: 0;
+
+    }
+
+    .offer .o .badge {
+        height: 60px;
+        width: 80px;
+        /* box-shadow: 0 0 10px rgb(232, 213, 116); */
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+    }
+
+    .offer .o .badge:hover {
+
+        transform: rotateY(360deg);
+        box-shadow: none;
+
+    }
+
+    .o img:hover {
+
+        transform: rotateY(360deg);
+        box-shadow: 0 0 20px rgb(232, 213, 116);
+
+
+    }
+
+    .lorem {
+
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        margin-bottom: 30px;
+
+        margin-top: 10px;
+        color: rgb(243, 235, 197);
+        font-size: 16px;
+        font-family: "Concert One", sans-serif;
+
+    }
+
+    #o2 {
+
+        width: 300px;
+
+    }
+
+    .oloream {
+
+        color: white;
+        font-size: 25px;
+        margin-top: 30px;
+        font-weight: 550;
+
+    }
+
+    .olrm {
+
+
+        margin-top: 10px;
+        color: rgb(232, 213, 116);
+        font-size: 12px;
+        font-family: "Concert One", sans-serif;
+
+    }
+
+    .shp {
+
+        margin-top: 10px;
+        text-align: center;
+        height: 10px;
+        width: 10px;
+    }
+
+
+}
+
+@media (max-width:600px) {
+
+    .text1 {
+
+        /* margin-left: 25%; */
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .i1 {
+        /* margin-left: 25%; */
+        width: 130px;
+        text-align: center;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/* 
+
+
+---------------------------------------since------------------------------------------------- */
+
+.since{
+    margin-top: 100px;
+    color: white;
+    display: flex;
+    width: 100%;
+
+}
+
+.part1{
+    /* border: 2px solid white; */
+    margin-top: -160px;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    animation: vib 2s infinite;
+
+   
+}
+.part2{
+    /* border: 2px solid rgb(22, 71, 132); */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+    
+    
+}
+
+#lorem{
+    margin-top: 50px;
+    font-weight: 350;
+}
+
+#i1{
+    width: 110px;
+}
+
+.book{
+    margin-top: -50px;
+    color: rgb(243, 235, 197);
+    font-size: 18px;
+    font-family: "Concert One", sans-serif;
+}
+
+.number{
+    margin-top: 10px;
+    color: rgb(232, 213, 116);
+    font-size: 21px;
+    /* font-family: "Concert One", sans-serif; */
+}
+
+#btn{
+
+    margin-top: 35px;
+    width: 150px;
+}
+
+.part3{
+   
+    margin-right: 100px;
+    margin-top: -80px;
+    /* border: 2px solid rgb(156, 193, 47); */
+    width: 55%;
+    display: flex;
+    flex-direction: row-reverse;
+    animation: vib 2s infinite;
+}
+
+.layer1{
+    position: absolute;
+    z-index: 1;
+    animation: round 25s infinite;
+}
+
+@keyframes round {
+
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.layer2{
+    position: absolute;
+    z-index: 2;
+}
+
+.layer3{
+
+    margin-top: 60px;
+    
+}
+
+.layer4{
+    position: absolute;
+    margin-top: 450px;   
+    z-index: 2;
+    margin-left: -100px;
+    box-shadow: -0.2px 0.2px 10px  rgb(243, 229, 160);
+
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    
+}
+
+.layer4:hover{
+    transform: rotateY(360deg);
+}
+
+
+@media (max-width:900px) {
+
+    .since{
+        margin-top: 40px;
+        color: white;
+        display: block;
+    
+    }
+    
+    .part1{
+        
+        display: none;
+    }
+    .part2{
+        /* border: 2px solid rgb(22, 71, 132); */
+        margin-top: -10px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        
+        
+        
+    }
+
+    #text1{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    
+    #lorem{
+        margin-top: 50px;
+        font-weight: 350;
+        font-size: 12px;
+    }
+    
+    #i1{
+        width: 110px;
+    }
+    
+    .book{
+        margin-top: 50px;
+        color: rgb(243, 235, 197);
+        font-size: 16px;
+        font-family: "Concert One", sans-serif;
+    }
+    
+    .number{
+        margin-top: 10px;
+        color: rgb(232, 213, 116);
+        font-size: 21px;
+        /* font-family: "Concert One", sans-serif; */
+    }
+    
+    #btn{
+    
+        margin-top: 35px;
+        width: 150px;
+    }
+    
+    .part3{
+       
+        margin-right: 1px;
+        margin-top: 30px;
+        margin-left: 135px;
+        /* border: 2px solid rgb(156, 193, 47); */
+      
+        display: flex;
+        flex-direction: row-reverse;
+        animation: vib 2s infinite;
+    }
+    
+    .layer1{
+        position: absolute;
+        z-index: 1;
+        animation: round 25s infinite;
+    }
+
+    .layer1 img{
+        height: 80px;
+        width: 80px;
+    }
+    
+    @keyframes round {
+    
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(360deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+    .layer2{
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .layer2 img{
+        height: 80px;
+        width: 80px;
+    }
+    .layer3{
+    
+        margin-top: 40px;      
+        
+    }
+    .layer3 img{
+    
+        height: 270px;
+        width: 270px;     
+        
+    }
+    
+    .layer4{
+        position: absolute;
+        margin-top: 280px;   
+        z-index: 2;
+        margin-left: -30px;
+        box-shadow: -0.2px 0.2px 10px  rgb(243, 229, 160);
+    
+        transition: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+        
+    }
+
+    .layer4 img{
+        height: 80px;
+        width: 80px;
+    }
+    
+    .layer4:hover{
+        transform: rotateY(360deg);
+    }
+    
+
+}
+
+/* 
+
+<!-- ----------------------------------------lobster---------------------------------------------------------------- --> */
+
+.lobster{
+
+    display: flex;
+    margin-top: 150px;
+    z-index: 1;
+}
+
+.prt1{
+
+    width: 45%;
+    height: 700px;
+    background-image: url(images/special-dish-banner.jpg);
+    background-size: 100% 100%;
+
+    
+    
+}
+
+.prt2{
+   
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.sdish{
+    display: flex;
+    margin-left: 100px;
+  
+
+    
+}
+
+.bdg{
+  
+    height: 60px;
+    width: 40px;
+    animation: vib 2s infinite;
+}
+
+.bdg img{
+    height: 100%;
+    width: 100%;
+}
+
+.sd{
+   
+    color: rgb(238, 215, 98);
+    font-size: 12px;
+    font-family: "Concert One", sans-serif;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+#text3{
+    margin-left: 160px;
+    margin-top: 20px;
+}
+
+#lorem2{
+    margin-left: 160px;
+    margin-top: 20px;
+    font-size: 15px;
+
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.money{
+    display: flex;
+    margin-top: -50px;
+    margin-left: 160px;
+}
+
+.m1{
+    font-size: 20px;
+    margin-right: 20px;
+    color: rgb(50, 50, 50);
+}
+.m2{
+    font-size: 24px;
+    color: rgb(238, 215, 98) ;
+}
+
+#bn1{
+    margin-left: 160px;
+    width: 150px;
+    margin-top: 50px;
+    
+}
+
+.prt3{
+    width: 15%;
+    
+   
+}
+
+.ss{
+    z-index: -1;
+    margin-top: 200px;
+    animation: vib 2s infinite;
+}
+.ss1{
+    
+    z-index: 3;
+    
+    
+}
+.ss1 img{
+    
+   margin-top: 100px;
+   margin-left: -160px;
+
+}
+
+
+
+
+@media (max-width:900px) {
+    .lobster{
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    
+    .prt1{
+    
+        position: absolute;
+        z-index: -1;
+        opacity: 0.3;
+        width: 100%;
+        height: 500px;
+        background-image: url(images/special-dish-banner.jpg);
+        background-size: 100% 100%;
+    
+        
+        
+    }
+    
+    .prt2{
+       position: absolute;
+       z-index: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    
+    .sdish{
+        display: flex;
+        margin-left: 10px;
+      
+    
+        
+    }
+    
+    .bdg{
+      
+        height: 40px;
+        width: 20px;
+        animation: vib 2s infinite;
+    }
+    
+    .bdg img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .sd{
+       
+        color: rgb(238, 215, 98);
+        font-size: 12px;
+        font-family: "Concert One", sans-serif;
+        margin: 10px;
+        margin-left: 20px;
+    }
+    
+    #text3{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    #lorem2{
+        margin-left: 50px;
+        margin-top: 20px;
+        font-size: 13px;
+    
+        line-height: 25px;
+        font-weight: 500;
+    }
+    
+    .money{
+        display: flex;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    
+    .m1{
+        font-size: 20px;
+        margin-right: 20px;
+        color: rgb(121, 117, 117);
+    }
+    .m2{
+        font-size: 24px;
+        color: rgb(238, 215, 98) ;
+    }
+    
+    #bn1{
+        margin-left: 50px;
+        width: 150px;
+        margin-top: 50px;
+        
+    }
+    
+    .prt3{
+        width: 15%;
+        
+       
+    }
+    
+    .ss{
+        display: none;
+        z-index: -1;
+        margin-top: 200px;
+        animation: vib 2s infinite;
+    }
+    .ss1{
+        
+        z-index: 10;
+        
+        
+    }
+    .ss1 img{
+        
+       margin-top: 600px;
+       margin-left: 10px;
+       
+    
+    }
+    
+
+}
+
+
+
+
+
+/* 
+----------------------------------------------DELICIOUS MENU--------------------------------------- */
+.dilmenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    background-color: rgb(11, 11, 11);
+    background-image: url(images/shape-5.png);
+    background-repeat: no-repeat;
+    margin-top: -200px;
+    height: 900px;
+    width: 100%;
+    animation: vib 2s infinite;
+}
+.spesel{
+
+
+    margin-top: 20px;
+    color: rgb(238, 215, 98);
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Concert One", sans-serif;
+    
+}
+
+.txt1 {
+ 
+
+    margin-top: 10px;
+    color: aliceblue;
+    font-size: 50px;
+
+    text-shadow: 1px 1px 5px rgb(232, 213, 116);
+    border-radius: 10px;
+}
+
+.y1{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 100px;
+}
+
+.dmenu{
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 65%;
+    width: 70%;
+    display: flex;
+}
+
+.mnu1{
+    /* border: 2px solid green; */
+    width: 50%;
+    height: 100%;
+}
+.mnu2{
+    /* border: 2px solid white; */
+    width: 50%;
+    height: 100%;
+}
+
+.mmn1{
+    display: flex;
+    /* border: 2px solid yellow; */
+    margin: 10px;
+    width: 80%;
+    height:160px;
+    padding: 20px;
+}
+
+.mn1{
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 35%;
+    
+    
+}
+
+.mn1 img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    box-shadow: -0.2px 0.2px 10px  rgb(243, 229, 160);
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+
+}
+
+.mn1 img:hover{
+
+    transform: rotateY(360deg);
+}
+
+
+
+.mn2{
+    /* border: 2px solid rgb(216, 45, 174); */
+    height: 100%;
+    width: 65%;
+    display: block;
+    text-align: left;
+    padding: 10px;
+}
+
+.nm1{
+
+    font-size: 14px;
+    color: white;
+
+}
+
+.nm1 span{
+    text-shadow: 1px 1px 5px rgb(232, 213, 116);
+    color: rgb(238, 215, 98);
+    font-size: 16px;
+    margin-left: 35px;
+}
+
+.discrb{
+    margin-top: 15px;
+    font-size: 11px;
+    color: rgb(239, 236, 172);
+}
+
+#du{
+
+    margin-top: -50px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+@media (max-width:900px) {
+
+    .dilmenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+        background-color: rgb(11, 11, 11);
+        background-image: url(images/shape-5.png);
+        background-repeat: no-repeat;
+        margin-top: -200px;
+        height: 1200px;
+        width: 100%;
+        animation: vib 2s infinite;
+    }
+    .spesel{
+    
+    
+        margin-top: -100px;
+        color: rgb(238, 215, 98);
+        font-size: 12px;
+        font-weight: 700;
+        font-family: "Concert One", sans-serif;
+        
+    }
+    
+    .txt1 {
+     
+    
+        margin-top: 10px;
+        color: aliceblue;
+        font-size: 50px;
+    
+        text-shadow: 1px 1px 5px rgb(232, 213, 116);
+        border-radius: 10px;
+    }
+    
+    .y1{
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        width: 100px;
+    }
+    
+    .dmenu{
+        /* border: 2px solid red; */
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        height: 65%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mnu1{
+        /* border: 2px solid green; */
+        width: 100%;
+        height: 500px;
+    }
+    .mnu2{
+        /* border: 2px solid white; */
+        width: 100%;
+        height: 500px;
+    }
+    
+    .mmn1{
+        display: flex;
+        /* border: 2px solid yellow; */
+        margin: 20px;
+        width: 100%;
+        height:100px;
+        padding: 2px;
+    }
+    
+    .mn1{
+        /* border: 2px solid blue; */
+        height: 100%;
+        width: 35%;
+        
+        
+    }
+    
+    .mn1 img{
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        box-shadow: -0.2px 0.2px 10px  rgb(243, 229, 160);
+        transition: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+    
+    }
+    
+    .mn1 img:hover{
+    
+        transform: rotateY(360deg);
+    }
+    
+    
+    
+    .mn2{
+        /* border: 2px solid rgb(216, 45, 174); */
+        height: 100%;
+        width: 65%;
+        display: block;
+        text-align: left;
+        padding: 10px;
+    }
+    
+    .nm1{
+    
+        font-size: 14px;
+        color: white;
+    
+    }
+    
+    .nm1 span{
+        text-shadow: 1px 1px 5px rgb(232, 213, 116);
+        color: rgb(238, 215, 98);
+        font-size: 16px;
+        margin-left: 35px;
+    }
+    
+    .discrb{
+        margin-top: 15px;
+        font-size: 11px;
+        color: rgb(239, 236, 172);
+    }
+    
+    #du{
+    
+        margin-top: 50px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+
+/* 
+----------------------------------------------form--------------------------------------- */
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     z-index: 1;
+    position: absolute;
+    background-image: url(images/testimonial-bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 700px;
+    height: 900px;
+    width: 100%;
+}
+
+.foorm{
+
+    z-index: 2;
+    /* border: 2px solid red; */
+    height: 70%;
+    width: 75%;
+    display: flex;
+}
+
+.frm{
+    height: 100%;
+    width: 65%;
+    /* border: 2px solid white; */
+    background-color: black;
+}
+
+
+.mainform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    /* border: 2px solid yellow; */
+    height: 68%;
+    width: 90%;
+}
+
+.namnum{
+    /* border: 2px solid red; */
+    
+    margin: 20px;
+    width: 600px;
+    height: 60px;
+    display: flex;
+}
+
+.namnum #name{
+    background: #151515;
+    color: rgb(255, 255, 255);
+    border: 0;
+    outline: none;
+    justify-content: center;
+    width: 50%;  
+    padding: 15px;
+    font-family: "Concert One", sans-serif;
+    font-size: 17px;
+    box-shadow: -0.1px 0.1px 5px  rgb(87, 87, 87);
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+.namnum #name:hover{
+    box-shadow: 0 0 6px rgb(255, 253, 156);
+}
+.namnum #num{
+    flex-direction: row-reverse;
+    background: #151515;
+    color: rgb(255, 255, 255);
+    border: 0;
+    outline: none;
+    justify-content: center;
+    width: 50%;  
+    padding: 15px;
+    font-family: "Concert One", sans-serif;
+    font-size: 17px;
+    margin-left: 15px;
+    box-shadow: -0.1px 0.1px 5px  rgb(87, 87, 87);
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+.namnum #num:hover{
+    box-shadow: 0 0 6px rgb(255, 253, 156);
+}
+
+.daaat{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.namnum #selec1{
+    /* flex-direction: row-reverse; */
+    background: #151515;
+    color: rgb(255, 255, 255);
+    border: 0;
+    outline: none;
+    justify-content: center;
+    width: 33%;  
+    padding: 15px;
+    font-family: "Concert One", sans-serif;
+    font-size: 17px;
+    
+    box-shadow: -0.1px 0.1px 5px  rgb(87, 87, 87);
+
+    transition: all;
+    transition-duration: 0.3s;
+
+}
+
+.namnum #selec1:hover{
+    box-shadow: 0 0 6px rgb(255, 253, 156);
+}
+
+.namnum #txtarea{
+    background: #151515;
+    color: rgb(255, 255, 255);
+    border: 0;
+    outline: none;
+    justify-content: center;
+    width: 100%;
+    height: 150px;  
+    padding: 15px;
+    font-family: "Concert One", sans-serif;
+    font-size: 17px;
+    box-shadow: -0.1px 0.1px 5px  rgb(87, 87, 87);
+    
+    transition: all;
+    transition-duration: 0.3s;
+
+}
+
+.namnum #txtarea:hover{
+    box-shadow: 0 0 6px rgb(255, 253, 156);
+}
+
+#submit {
+    font-family: "Concert One", sans-serif;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(190, 164, 92);
+    border: 0;
+    outline: none;
+    box-shadow: 0 0 2px rgb(255, 253, 156);
+    width:90%;
+    height: 50px;
+    color: black;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+
+    margin-top: 120px;
+}
+
+#submit:hover {
+
+    transform: translate(50px, 50px);
+    box-shadow: 0 0 5px rgb(255, 253, 156);
+    transform: scale(1.1);
+
+
+}
+
+.cont{
+    height: 100%;
+    width: 35%;
+    /* border: 2px solid rgb(0, 134, 40); */
+    background-color: rgb(3, 3, 3);
+    background-image: url(images/form-pattern.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.nnmm{
+    color: rgb(238, 215, 98);
+    margin-top: 12px;
+    font-size: 25px;
+    
+}
+
+@media (max-width:900px) {
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+         z-index: 1;
+        position: absolute;
+        background-image: url(images/testimonial-bg.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-top: 1000px;
+        height: 1600px;
+        width: 100%;
+    }
+    
+    .foorm{
+    
+        z-index: 2;
+        /* border: 2px solid red; */
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .frm{
+        margin-left: 20px;
+        margin-top: -50px;
+        height: 1200px;
+        width: 90%;
+        /* border: 2px solid white; */
+        background-color: black;
+    }
+    
+    
+    .mainform{
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+        margin: 1px;
+        /* border: 2px solid yellow; */
+        height: 68%;
+        width: 100%;
+    }
+    
+    .namnum{
+        /* border: 2px solid red; */
+        
+        
+        
+        width: 90%;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .namnum #name{
+        background: #151515;
+        color: rgb(255, 255, 255);
+        border: 0;
+        outline: none;
+        justify-content: center;
+        width: 100%;  
+        padding: 15px;
+        font-family: "Concert One", sans-serif;
+        font-size: 17px;
+        box-shadow: -0.1px 0.1px 5px  rgb(87, 87, 87);
+        transition: all;
+        transition-duration: 0.3s;
+        margin-bottom: 10px;
+    }
+    
+    .namnum #name:hover{
+        box-shadow: 0 0 6px rgb(255, 253, 156);
+    }
+    .namnum #num{
+        flex-direction: row-reverse;
+        background: #151515;
+        color: rgb(255, 255, 255);
+        border: 0;
+        outline: none;
+        justify-content: center;
+        width: 100%;  
+        padding: 15px;
+        font-family: "Concert One", sans-serif;
+        font-size: 17px;
+        margin-left: 0px;
+        box-shadow: -0.1px 0.1px 5px  rgb(87, 87, 87);
+        transition: all;
+        transition-duration: 0.3s;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .namnum #num:hover{
+        box-shadow: 0 0 6px rgb(255, 253, 156);
+    }
+    
+    .daaat{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .ttt{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .namnum #selec1{
+        margin-top: 0px;
+        flex-direction: row-reverse;
+        background: #151515;
+        color: rgb(255, 255, 255);
+        border: 0;
+        outline: none;
+        justify-content: center;
+        width: 100%;  
+        padding: 15px;
+        font-family: "Concert One", sans-serif;
+        font-size: 17px;
+        
+        box-shadow: -0.1px 0.1px 5px  rgb(87, 87, 87);
+    
+        transition: all;
+        transition-duration: 0.3s;
+        margin-bottom: 10px;
+    
+    }
+    
+    .namnum #selec1:hover{
+        box-shadow: 0 0 6px rgb(255, 253, 156);
+    }
+    
+    .namnum #txtarea{
+        background: #151515;
+        color: rgb(255, 255, 255);
+        border: 0;
+        outline: none;
+        justify-content: center;
+        width: 100%;
+        height: 500px;  
+        padding: 15px;
+        font-family: "Concert One", sans-serif;
+        font-size: 17px;
+        box-shadow: -0.1px 0.1px 5px  rgb(87, 87, 87);
+        
+        transition: all;
+        transition-duration: 0.3s;
+        margin-top: 180px;
+    
+    }
+    
+    .namnum #txtarea:hover{
+        box-shadow: 0 0 6px rgb(255, 253, 156);
+    }
+    
+    #submit {
+        font-family: "Concert One", sans-serif;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: rgb(190, 164, 92);
+        border: 0;
+        outline: none;
+        box-shadow: 0 0 2px rgb(255, 253, 156);
+        width:60%;
+        height: 50px;
+        color: black;
+        transition-property: all;
+        transition-duration: 0.1s;
+        transition-timing-function: ease-in;
+        margin-left: 70px;
+    
+        margin-top: 200px;
+    }
+    
+    #submit:hover {
+    
+        transform: translate(50px, 50px);
+        box-shadow: 0 0 5px rgb(255, 253, 156);
+        transform: scale(1.1);
+    
+    
+    }
+    
+    .cont{
+        margin-top: 100px;
+        height: 900px;
+        width: 100%;
+        /* border: 2px solid rgb(0, 134, 40); */
+        background-color: rgb(3, 3, 3);
+        background-image: url(images/form-pattern.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .nnmm{
+        color: rgb(238, 215, 98);
+        margin-top: 12px;
+        font-size: 25px;
+        
+    }
+}
+
+
+
+/* -------------------------------------------------oneee------------------------------- */
+
+
+.oneeee{
+   
+    margin-top: 1650px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    
+}
+#eee{
+    width: 350px;
+}
+
+#o3 #eee{
+
+    margin-left: -60px;
+}
+@media (max-width:900px) {
+
+    
+.oneeee{
+   
+    margin-top: 2650px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#ue{
+    text-align: center;
+}
+
+#eee{
+
+    margin-left: -10px;
+    height: 200px;
+    width: 200px;
+
+
+}
+
+#o3 #eee{
+
+    margin-left: 0px;
+}
+
+}
+
+
+
+/* ---------------------------------last-------------------------------------------------------- */
+
+.last{
+
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+
+}
+
+.flast{
+    /* border: 2px solid red; */
+    width: 90%;
+    height: 300px;
+    margin-top: 60px;
+    display: flex;
+}
+.last1{
+
+    
+    background-color: rgb(10, 10, 10);
+    border-radius: 10px;
+    height: 90%;
+    width: 25%;
+    margin: 10px;
+    box-shadow: 0 0 5px rgb(67, 67, 66);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.last1:hover{
+    transform: translate(5px,5px);
+}
+
+
+
+.last1 img{
+    transition: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+}
+.last1 img:hover{
+
+    transform: rotateY(360deg);
+    
+}
+
+
+@media (max-width:900px) {
+
+    .last{
+
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+
+}
+
+.flast{
+    /* border: 2px solid red; */
+    width: 90%;
+    height: 1600px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.last1{
+
+    
+    background-color: rgb(10, 10, 10);
+    border-radius: 10px;
+    height: 300px;
+    width: 70%;
+    margin: 10px;
+    box-shadow: 0 0 5px rgb(67, 67, 66);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    margin-left: 50px;
+}
+
+.last1:hover{
+    transform: translate(5px,5px);
+}
+
+
+
+.last1 img{
+    transition: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+}
+.last1 img:hover{
+
+    transform: rotateY(360deg);
+    
+}
+
+}
